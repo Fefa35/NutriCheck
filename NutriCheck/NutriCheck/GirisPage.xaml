@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NutriCheck.GirisPage"
+             BackgroundColor="#F8F9FA"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+
+            <Label Text="NutriCheck" FontSize="32" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#2B547E" />
+
+            <Border StrokeShape="RoundRectangle 15" StrokeThickness="0" BackgroundColor="#E8F4FD" Padding="20">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Hoş Geldiniz" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#2B547E" />
+                    <Label Text="Sağlıklı yaşam yolculuğunuzda size rehberlik ediyoruz." FontSize="14" HorizontalTextAlignment="Center" TextColor="#4A6982" />
+
+                    <Border StrokeShape="RoundRectangle 10" StrokeThickness="0" BackgroundColor="#FFF3CD" Padding="10">
+                        <Label Text="⚠️ UYARI: Bu listeler genel bilgilendirme amaçlıdır; kronik hastalığı olanlar, hamileler veya çocuklar mutlaka bir sağlık profesyoneline danışmalıdır."
+                               FontSize="11" FontAttributes="Italic" TextColor="#856404" HorizontalTextAlignment="Center"/>
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="ANALİZE BAŞLA" 
+                    Clicked="OnAnalizeGitClicked"
+                    BackgroundColor="#2980B9" TextColor="White" 
+                    CornerRadius="25" HeightRequest="60" FontAttributes="Bold" />
+
+            <Label Text="Geliştirenler: Can Ş., Ahmet E. K. ve Efe Ü. G." 
+                   FontSize="12" HorizontalOptions="Center" TextColor="Silver" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
